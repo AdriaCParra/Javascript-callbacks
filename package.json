@@ -2,8 +2,8 @@
   "name": "07_javascript_callbacks",
   "version": "1.0.0",
   "description": "<figure style=\"text-align: center\">    <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png\" alt=\"DOM Tree\" width=\"100\" />    <figcaption>JavaScript</figcaption> </figure>",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
