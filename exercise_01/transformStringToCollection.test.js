@@ -1,4 +1,4 @@
-import transformStringToArray from "./transformStringToCollection";
+import transformStringToArray from "./transformStringToCollection.js";
 
 describe("transformStringToArray", () => {
   it("should call onError callback if value is not a string", () => {

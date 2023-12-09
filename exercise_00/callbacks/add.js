@@ -12,7 +12,7 @@ const add = (value, randomValue) => {
   const result = value + randomValue;
 
   console.log(
-    `Addition with values ${value} and ${randomValue} has been succesfully executed with result ${result}`
+    `Addition with values ${value} and ${randomValue} has been succesfully executed with result ${result}`,
   );
 
   return result;

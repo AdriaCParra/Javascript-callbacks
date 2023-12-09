@@ -1,4 +1,4 @@
-import createUser from "./createUser";
+import createUser from "./createUser.js";
 
 describe("createUser", () => {
   it("should call onError callback if email is empty", () => {
