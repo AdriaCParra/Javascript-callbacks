@@ -7,3 +7,9 @@
  * output:
  *  - empty array
  */
+
+const onError = () => {
+  return [];
+};
+
+export default onError;
