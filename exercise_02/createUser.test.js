@@ -8,7 +8,7 @@ describe("createUser", () => {
 
     createUser(email, onError, onSuccess);
 
-    expect(onError).toHaveBeenCalled();
+    expect(onError).toHaveBeenCalledTimes(1);
     expect(onSuccess).not.toHaveBeenCalled();
   });
 
@@ -22,7 +22,7 @@ describe("createUser", () => {
     createUser(email, onError, onSuccess);
 
     expect(onError).toHaveBeenCalled();
-    expect(onSuccess).not.toHaveBeenCalled();
+    expect(onSuccess).not.toHaveBeenCalledTimes(1);
 
     jest.spyOn(Math, "random").mockRestore();
   });
@@ -36,7 +36,7 @@ describe("createUser", () => {
 
     createUser(email, onError, onSuccess);
 
-    expect(onError).not.toHaveBeenCalled();
+    expect(onError).not.toHaveBeenCalledTimes(1);
     expect(onSuccess).toHaveBeenCalled();
 
     jest.spyOn(Math, "random").mockRestore();

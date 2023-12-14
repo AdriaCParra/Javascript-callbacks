@@ -1,13 +1,17 @@
 import transformStringToArray from "./transformStringToCollection.js";
 
 describe("transformStringToArray", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   it("should call onError callback if value is not a string", () => {
     const onError = jest.fn();
     const onSuccess = jest.fn();
 
     transformStringToArray(123, onError, onSuccess);
 
-    expect(onError).toHaveBeenCalled();
+    expect(onError).toHaveBeenCalledTimes(1);
     expect(onSuccess).not.toHaveBeenCalled();
   });
 
@@ -17,7 +21,7 @@ describe("transformStringToArray", () => {
 
     transformStringToArray("", onError, onSuccess);
 
-    expect(onError).toHaveBeenCalled();
+    expect(onError).toHaveBeenCalledTimes(1);
     expect(onSuccess).not.toHaveBeenCalled();
   });
 
@@ -28,6 +32,6 @@ describe("transformStringToArray", () => {
     transformStringToArray("Hello", onError, onSuccess);
 
     expect(onError).not.toHaveBeenCalled();
-    expect(onSuccess).toHaveBeenCalled();
+    expect(onSuccess).toHaveBeenCalledTimes(1);
   });
 });
