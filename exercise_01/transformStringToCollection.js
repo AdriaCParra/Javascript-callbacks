@@ -1,3 +1,5 @@
+import { validateString } from "../helpers/validateString.js";
+
 /**
  * Define 'transformStringToArray' function and signature (JSDocs)
  *
@@ -14,7 +16,7 @@
  */
 
 const transformStringToArray = (value, onError, onSuccess) => {
-  if (typeof value !== "string" || value === "") return onError();
+  if (!validateString(value)) return onError();
 
   return onSuccess(value);
 };
