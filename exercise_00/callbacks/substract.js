@@ -12,7 +12,7 @@ const substract = (value, randomValue) => {
   const result = value - randomValue;
 
   console.log(
-    `Substraction with values ${value} and ${randomValue} has been succesfully executed with result ${result}`
+    `Substraction with values ${value} and ${randomValue} has been succesfully executed with result ${result}`,
   );
 
   return result;

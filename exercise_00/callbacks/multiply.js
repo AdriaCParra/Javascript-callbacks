@@ -12,7 +12,7 @@ const multiply = (value, randomValue) => {
   const result = value * randomValue;
 
   console.log(
-    `Multiplication with values ${value} and ${randomValue} has been succesfully executed with result ${result}`
+    `Multiplication with values ${value} and ${randomValue} has been succesfully executed with result ${result}`,
   );
 
   return result;

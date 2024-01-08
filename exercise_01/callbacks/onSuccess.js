@@ -8,3 +8,14 @@
  * output:
  *  - array
  */
+
+/**
+ *
+ * @param {string} value
+ * @returns {array}
+ */
+const onSuccess = (value) => {
+  return value.split(" ");
+};
+
+export default onSuccess;

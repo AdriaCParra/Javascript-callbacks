@@ -12,7 +12,7 @@ const divide = (value, randomValue) => {
   const result = value / randomValue;
 
   console.log(
-    `Division with values ${value} and ${randomValue} has been succesfully executed with result ${result}`
+    `Division with values ${value} and ${randomValue} has been succesfully executed with result ${result}`,
   );
 
   return result;
